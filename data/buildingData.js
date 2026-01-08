@@ -19,7 +19,7 @@ Game.buildingData = (function () {
             'charcoal': -1
         },
         cost: {
-            'metal': 50,
+            "JordansMetal": 50,
             'gem': 25
         }
     });
@@ -32,7 +32,7 @@ Game.buildingData = (function () {
             'energy': 1.5
         },
         cost: {
-            'metal': 30,
+            "JordansMetal": 30,
             'gem': 35
         }
     });
@@ -278,7 +278,7 @@ Game.buildingData = (function () {
             'oil': 1
         },
         cost: {
-            'metal': 60,
+            "JordansMetal": 60,
             'gem': 20
         }
     });
@@ -292,7 +292,7 @@ Game.buildingData = (function () {
             'oil': 10
         },
         cost: {
-            'metal': 250,
+            "JordansMetal": 250,
             'gem': 80,
             'oil': 50
         }
@@ -332,13 +332,13 @@ Game.buildingData = (function () {
     instance.metalT1 = $.extend({}, baseProducerBuilding, {
         name: 'Miner',
         desc: 'Build a pickaxe for your miner.',
-        resource: 'metal',
+        resource: "JordansMetal",
         unlocked: true,
         resourcePerSecond: {
-            'metal': 1
+            "JordansMetal": 1
         },
         cost: {
-            'metal': 10,
+            "JordansMetal": 10,
             'wood': 5
         }
     });
@@ -346,13 +346,13 @@ Game.buildingData = (function () {
     instance.metalT2 = $.extend({}, baseProducerBuilding, {
         name: 'Heavy Drill',
         desc: 'Heavy Drills mine Metal at mass.',
-        resource: 'metal',
+        resource: "JordansMetal",
         resourcePerSecond: {
             'energy': -2,
-            'metal': 8
+            "JordansMetal": 8
         },
         cost: {
-            'metal': 160,
+            "JordansMetal": 160,
             'gem': 60,
             'oil': 50
         }
@@ -361,10 +361,10 @@ Game.buildingData = (function () {
     instance.metalT3 = $.extend({}, baseProducerBuilding, {
         name: 'Giga Drill',
         desc: 'Giga Drills extract Metal at colossal speeds.',
-        resource: 'metal',
+        resource: "JordansMetal",
         resourcePerSecond: {
             'energy': -9,
-            'metal': 108
+            "JordansMetal": 108
         },
         cost: {
             'lunarite': 2800,
@@ -376,10 +376,10 @@ Game.buildingData = (function () {
     instance.metalT4 = $.extend({}, baseProducerBuilding, {
         name: 'Quantum Drill',
         desc: 'Quantum Drills bend the space-time continuum to get metal faster than physically possible.',
-        resource: 'metal',
+        resource: "JordansMetal",
         resourcePerSecond: {
             'energy': -24,
-            'metal': 427
+            "JordansMetal": 427
         },
         cost: {
             'lunarite': 29000,
@@ -398,7 +398,7 @@ Game.buildingData = (function () {
             'gem': 1
         },
         cost: {
-            'metal': 15,
+            "JordansMetal": 15,
             'gem': 10
         }
     });
@@ -412,7 +412,7 @@ Game.buildingData = (function () {
             'gem': 4
         },
         cost: {
-            'metal': 120,
+            "JordansMetal": 120,
             'gem': 200,
             'oil': 60
         }
@@ -458,7 +458,7 @@ Game.buildingData = (function () {
             'charcoal': 1
         },
         cost: {
-            'metal': 10,
+            "JordansMetal": 10,
             'wood': 5
         }
     });
@@ -473,7 +473,7 @@ Game.buildingData = (function () {
             'charcoal': 4
         },
         cost: {
-            'metal': 80,
+            "JordansMetal": 80,
             'wood': 40,
             'oil': 100
         }
@@ -521,7 +521,7 @@ Game.buildingData = (function () {
             'wood': 1
         },
         cost: {
-            'metal': 10,
+            "JordansMetal": 10,
             'wood': 5
         }
     });
@@ -535,7 +535,7 @@ Game.buildingData = (function () {
             'wood': 6
         },
         cost: {
-            'metal': 50,
+            "JordansMetal": 50,
             'gem': 90,
             'oil': 40
         }
@@ -656,7 +656,7 @@ Game.buildingData = (function () {
             'lunarite': 10
         },
         cost: {
-            'metal': 1000,
+            "JordansMetal": 1000,
             'gem': 600,
             'oil': 400
         }
@@ -1145,7 +1145,7 @@ Game.buildingData = (function () {
             'science': 0.1
         },
         cost: {
-            'metal': 20,
+            "JordansMetal": 20,
             'gem': 15,
             'wood': 10
         }
@@ -1159,7 +1159,7 @@ Game.buildingData = (function () {
             'science': 1
         },
         cost: {
-            'metal': 1000,
+            "JordansMetal": 1000,
             'gem': 200,
             'wood': 500
         }
@@ -1173,7 +1173,7 @@ Game.buildingData = (function () {
             'science': 10
         },
         cost: {
-            'metal': 17000,
+            "JordansMetal": 17000,
             'gem': 4700,
             'wood': 9600
         }
@@ -1188,7 +1188,7 @@ Game.buildingData = (function () {
             'rocketFuel': 0.2
         },
         cost: {
-            'metal': 1000,
+            "JordansMetal": 1000,
             'gem': 750,
             'wood': 500
         }
@@ -1202,7 +1202,7 @@ Game.buildingData = (function () {
             'rocketFuel': 1.5
         },
         cost: {
-            'metal': 12000,
+            "JordansMetal": 12000,
             'gem': 8300,
             'wood': 6800
         }
