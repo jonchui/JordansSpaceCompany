@@ -129,7 +129,7 @@ Game.starData = (function(){
 		factionId: "prasnian",
 		faction: "Prasnian Empire",
 		resource1: "Hydrogen",
-		resource2: "Metal",
+		resource2: "JordansMetal",
 		stats: {
 			"power": 293,
 			"defense": 112,
@@ -174,7 +174,7 @@ Game.starData = (function(){
 		factionId: "hyacinite",
 		faction: "Hyacinite Congregation",
 		resource1: "Silver",
-		resource2: "Metal",
+		resource2: "JordansMetal",
 		stats: {
 			"power": 420,
 			"defense": 143,
@@ -414,7 +414,7 @@ Game.starData = (function(){
 		factionId: "moviton",
 		faction: "Moviton Syndicate",
 		resource1: "Wood",
-		resource2: "Metal",
+		resource2: "JordansMetal",
 		stats: {
 			"power": 587,
 			"defense": 285,
@@ -443,7 +443,7 @@ Game.starData = (function(){
 		planets: 5,
 		factionId: "moviton",
 		faction: "Moviton Syndicate",
-		resource1: "Metal",
+		resource1: "JordansMetal",
 		resource2: "Meteorite",
 		stats: {
 			"power": 705,
@@ -503,7 +503,7 @@ Game.starData = (function(){
 		planets: 2,
 		factionId: "moviton",
 		faction: "Moviton Syndicate",
-		resource1: "Metal",
+		resource1: "JordansMetal",
 		resource2: "Hydrogen",
 		stats: {
 			"power": 568,
@@ -714,7 +714,7 @@ Game.starData = (function(){
 		factionId: "prasnian",
 		faction: "Prasnian Empire",
 		resource1: "Methane",
-		resource2: "Metal",
+		resource2: "JordansMetal",
 		stats: {
 			"power": 559,
 			"defense": 388,
@@ -954,7 +954,7 @@ Game.starData = (function(){
 		factionId: "prasnian",
 		faction: "Prasnian Empire",
 		resource1: "Oil",
-		resource2: "Metal",
+		resource2: "JordansMetal",
 		stats: {
 			"power": 762,
 			"defense": 511,
@@ -1028,7 +1028,7 @@ Game.starData = (function(){
 		planets: 1,
 		factionId: "moviton",
 		faction: "Moviton Syndicate",
-		resource1: "Metal",
+		resource1: "JordansMetal",
 		resource2: "Titanium",
 		stats: {
 			"power": 1095,
@@ -1179,7 +1179,7 @@ Game.starData = (function(){
 		factionId: "prasnian",
 		faction: "Prasnian Empire",
 		resource1: "Hydrogen",
-		resource2: "Metal",
+		resource2: "JordansMetal",
 		stats: {
 			"power": 1769,
 			"defense": 631,

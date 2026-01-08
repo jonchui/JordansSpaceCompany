@@ -122,12 +122,12 @@ Game.commsData = (function(){
 		max: 1,
 		completed: false,
 		cost: {
-			'metal': 60000000000,
+			"JordansMetal": 60000000000,
 			'ice': 6000000000,
 			'meteorite': 60000000
 		},
 		defaultCost: {
-			'metal': 60000000000,
+			"JordansMetal": 60000000000,
 			'ice': 6000000000,
 			'meteorite': 60000000
 		}
@@ -141,12 +141,12 @@ Game.commsData = (function(){
 		unlocked: true,
 		displayNeedsUpdate: true,
 		cost: {
-			'metal': 38600000000,
+			"JordansMetal": 38600000000,
 			'ice': 4320000000,
 			'meteorite': 15800000
 		},
 		defaultCost: {
-			'metal': 38600000000,
+			"JordansMetal": 38600000000,
 			'ice': 4320000000,
 			'meteorite': 15800000
 		}
@@ -194,12 +194,12 @@ Game.rocketPartsData = (function(){
 		cost: {
 			'lunarite': 100000,
 			'titanium': 100000,
-			'metal': 100000
+			"JordansMetal": 100000
 		},
 		defaultCost: {
 			'lunarite': 100000,
 			'titanium': 100000,
-			'metal': 100000
+			"JordansMetal": 100000
 		}
 	};
 
@@ -296,12 +296,12 @@ Game.militaryData = (function(){
 			'speed': 15
 		},
 		cost: {
-			'metal': 870000000,
+			"JordansMetal": 870000000,
 			'gem': 420000000,
 			'silver': 390000000
 		},
 		defaultCost: {
-			'metal': 870000000,
+			"JordansMetal": 870000000,
 			'gem': 420000000,
 			'silver': 390000000
 		}
@@ -368,12 +368,12 @@ Game.militaryData = (function(){
 			'speed': 9
 		},
 		cost: {
-			'metal': 4900000000,
+			"JordansMetal": 4900000000,
 			'uranium': 2300000000,
 			'hydrogen': 3100000000
 		},
 		defaultCost: {
-			'metal': 4900000000,
+			"JordansMetal": 4900000000,
 			'uranium': 2300000000,
 			'hydrogen': 3100000000
 		}

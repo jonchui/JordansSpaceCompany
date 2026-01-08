@@ -13,6 +13,11 @@ Game.resources = (function(){
     instance.initialise = function() {
         for (var id in Game.resourceData) {
             var data = Game.resourceData[id];
+            // #region agent log
+            if (id === 'metal' || id === 'JordansMetal') {
+                fetch('http://127.0.0.1:7242/ingest/1668879c-d315-44ec-ab21-80a6b2363d30',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'resource.js:15',message:'Resource init - checking metal resource',data:{resourceId:id,resourceName:data.name,resourceDataKeys:Object.keys(Game.resourceData)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+            }
+            // #endregion
             this.resourceTypeCount++;
             this.entries[id] = $.extend({}, data, {
                 id: id,
@@ -27,6 +32,11 @@ Game.resources = (function(){
             });
 
             this.entries[id].capacity = data.baseCapacity;
+            // #region agent log
+            if (id === 'metal' || id === 'JordansMetal') {
+                fetch('http://127.0.0.1:7242/ingest/1668879c-d315-44ec-ab21-80a6b2363d30',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'resource.js:30',message:'Resource init - after storing entry',data:{resourceId:id,storedName:this.entries[id].name,RESOURCE_Metal:RESOURCE.Metal},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+            }
+            // #endregion
         }
 
         for (var id in Game.resourceCategoryData) {
@@ -257,6 +267,11 @@ Game.resources = (function(){
     };
 
     instance.getResourceData = function(id) {
+        // #region agent log
+        if (id === 'metal' || id === 'JordansMetal' || id === RESOURCE.Metal) {
+            fetch('http://127.0.0.1:7242/ingest/1668879c-d315-44ec-ab21-80a6b2363d30',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'resource.js:259',message:'getResourceData called',data:{requestedId:id,RESOURCE_Metal:RESOURCE.Metal,hasEntry:!!this.entries[id],entryKeys:Object.keys(this.entries).filter(k=>k.includes('metal')||k.includes('Metal')||k.includes('Jordans')),entryName:this.entries[id]?this.entries[id].name:'NOT_FOUND'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})}).catch(()=>{});
+        }
+        // #endregion
         return this.entries[id];
     };
 

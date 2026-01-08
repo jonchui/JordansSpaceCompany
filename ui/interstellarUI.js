@@ -837,8 +837,18 @@ Game.interstellarUI = (function(){
 
         var segments = [];
         for(var id in data.cost) {
+            // #region agent log
+            if (id === 'metal' || id === 'JordansMetal' || id === RESOURCE.Metal) {
+                fetch('http://127.0.0.1:7242/ingest/1668879c-d315-44ec-ab21-80a6b2363d30',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'ui/interstellarUI.js:839',message:'buildCostDisplay - before getResourceData',data:{costId:id,RESOURCE_Metal:RESOURCE.Metal},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+            }
+            // #endregion
 
             var resourceData = Game.resources.getResourceData(id);
+            // #region agent log
+            if (id === 'metal' || id === 'JordansMetal' || id === RESOURCE.Metal) {
+                fetch('http://127.0.0.1:7242/ingest/1668879c-d315-44ec-ab21-80a6b2363d30',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'ui/interstellarUI.js:846',message:'buildCostDisplay - after getResourceData',data:{costId:id,resourceDataFound:!!resourceData,resourceName:resourceData?resourceData.name:'NOT_FOUND'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+            }
+            // #endregion
             if(!data) {
                 console.error("Unknown Resource in cost: " + id);
                 continue;

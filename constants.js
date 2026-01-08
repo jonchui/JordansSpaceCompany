@@ -24,7 +24,7 @@ RESOURCE = {
 	Uranium: 'uranium',
 	Lava: 'lava',
 	Oil: 'oil',
-	Metal: 'metal',
+	Metal: "JordansMetal",
 	Gem: 'gem',
 	Charcoal: 'charcoal',
 	Wood: 'wood',

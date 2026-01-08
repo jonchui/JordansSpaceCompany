@@ -87,8 +87,8 @@ Game.resourceData = (function () {
         unlocked: false
     };
 
-    instance.metal = {
-        name: 'Metal',
+    instance.JordansMetal = {
+        name: 'JordansMetal',
         desc: 'Metal is one of the primary resources. It is used for many things, including storage upgrades, machinery and most things in space.',
         icon: 'metalIcon',
         category: 'earth',
@@ -300,15 +300,15 @@ Game.storageData = (function(){
         resource: 'oil',
         cost: {
             'oil': 50,
-            'metal': 20
+            "JordansMetal": 20
         }
     });
 
     instance.storageUpgradeMetal = $.extend({}, baseUpgradeData, {
         desc: 'Upgrade your Metal storage size to ',
-        resource: 'metal',
+        resource: "JordansMetal",
         cost: {
-            'metal': 50
+            "JordansMetal": 50
         }
     });
 
@@ -317,7 +317,7 @@ Game.storageData = (function(){
         resource: 'gem',
         cost: {
             'gem': 50,
-            'metal': 20
+            "JordansMetal": 20
         }
     });
 
@@ -326,7 +326,7 @@ Game.storageData = (function(){
         resource: 'charcoal',
         cost: {
             'charcoal': 50,
-            'metal': 20
+            "JordansMetal": 20
         }
     });
 
@@ -335,7 +335,7 @@ Game.storageData = (function(){
         resource: 'wood',
         cost: {
             'wood': 50,
-            'metal': 20
+            "JordansMetal": 20
         }
     });
 
@@ -357,7 +357,7 @@ Game.storageData = (function(){
         resource: 'lunarite',
         cost: {
             'lunarite': 50,
-            'metal': 400
+            "JordansMetal": 400
         }
     });
 
